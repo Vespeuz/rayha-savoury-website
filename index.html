@@ -396,8 +396,8 @@ No items yet — tap &quot;Add to Order&quot; on any menu item above
 <h4 class="font-bold text-white mb-md uppercase tracking-wider text-label-sm">Contact Info</h4>
 <ul class="space-y-sm text-surface-variant">
 <li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">location_on</span> <span id="footer-location"></span></li>
-<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">mail</span> <span id="footer-email"></span></li>
 <li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">call</span> <span id="footer-whatsapp"></span></li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">camera_alt</span> <a class="hover:text-gold-accent transition-colors" id="footer-instagram" href="https://www.instagram.com/ray_ha_savoury/" target="_blank" rel="noopener">@ray_ha_savoury</a></li>
 </ul>
 </div>
 </div>
@@ -718,13 +718,11 @@ function handleFormSubmit(e) {
 function populateFooter() {
     const desc = document.getElementById('footer-desc');
     const location = document.getElementById('footer-location');
-    const email = document.getElementById('footer-email');
     const whatsapp = document.getElementById('footer-whatsapp');
     const copyright = document.getElementById('footer-copyright');
 
     if (desc) desc.textContent = config.brand.description;
     if (location) location.textContent = config.brand.location;
-    if (email) email.textContent = config.contact.email;
     if (whatsapp) whatsapp.textContent = `+673 ${config.contact.whatsapp.slice(3)}`;
     if (copyright) copyright.textContent = `© ${new Date().getFullYear()} Ray Ha Savoury Brunei. All Rights Reserved. Halal Certified.`;
 }
