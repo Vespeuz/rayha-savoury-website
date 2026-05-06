@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'none'; base-uri 'self'; form-action 'none';"/>
+<title>Ray Ha Savoury | Halal Homemade Wraps & Popia in Brunei</title>
+<meta name="description" content="Brunei-based home business specialising in Halal, homemade Popia Beef Carbonara, Wraps, and Bakso Mama. Order via WhatsApp. BIBD / Cash accepted."/>
+<meta property="og:title" content="Ray Ha Savoury | Savour The Goodness"/>
+<meta property="og:description" content="Halal homemade wraps, popia, and bakso — handcrafted in Brunei-Muara. Order now!"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="/hero-bg.jpg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface-dim": "#e3d7d9",
+                    "inverse-surface": "#362f30",
+                    "on-tertiary-fixed-variant": "#235029",
+                    "surface-container-highest": "#ecdfe1",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#300117",
+                    "error-container": "#ffdad6",
+                    "outline": "#847377",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#6b9b6c",
+                    "surface-variant": "#ecdfe1",
+                    "on-tertiary": "#ffffff",
+                    "lavender-modern": "#C2B2D6",
+                    "tertiary-container": "#00300d",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb0cb",
+                    "on-surface-variant": "#514347",
+                    "on-primary-fixed-variant": "#6f334a",
+                    "inverse-on-surface": "#fbeef0",
+                    "tertiary-fixed-dim": "#a1d3a0",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#f2e5e7",
+                    "outline-variant": "#d6c1c6",
+                    "on-tertiary-fixed": "#002107",
+                    "on-background": "#201a1c",
+                    "secondary-container": "#fed65b",
+                    "primary-fixed": "#ffd9e3",
+                    "surface": "#fff8f8",
+                    "tertiary-fixed": "#bcefbb",
+                    "primary-container": "#4a152c",
+                    "gold-accent": "#D4AF37",
+                    "secondary-fixed": "#ffe088",
+                    "inverse-primary": "#ffb0cb",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-low": "#fef0f2",
+                    "charcoal-text": "#1A1A1A",
+                    "on-primary-fixed": "#39071f",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-container": "#c37a94",
+                    "surface-tint": "#8b4a62",
+                    "surface-container": "#f8ebed",
+                    "on-surface": "#201a1c",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface-bright": "#fff8f8",
+                    "on-secondary": "#ffffff",
+                    "plum-primary": "#4A152C",
+                    "secondary": "#735c00",
+                    "cream-bg": "#FCF9F2",
+                    "tertiary": "#001904",
+                    "background": "#fff8f8"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+                "spacing": {
+                    "md": "24px",
+                    "container-max": "1280px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "lg": "48px"
+                },
+                "fontFamily": {
+                    "h3": ["Playfair Display", "serif"],
+                    "body-md": ["Nunito", "sans-serif"],
+                    "h1": ["Playfair Display", "serif"],
+                    "label-sm": ["Nunito", "sans-serif"],
+                    "h2": ["Playfair Display", "serif"],
+                    "body-lg": ["Nunito", "sans-serif"]
+                },
+                "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .nav-link-active {
+        border-bottom: 2px solid #D4AF37;
+        padding-bottom: 4px;
+    }
+    .form-success {
+        display: none;
+    }
+    .form-success.active {
+        display: block;
+    }
+    .order-form-body.hidden {
+        display: none;
+    }
+</style>
+</head>
+<body class="bg-cream-bg text-charcoal-text font-body-md antialiased">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-cream-bg/95 backdrop-blur-md shadow-sm shadow-plum-primary/5">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="flex items-center gap-sm font-h2 text-h2 font-bold text-plum-primary dark:text-primary-fixed" href="#"><img alt="Ray Ha Savoury logo" class="w-10 h-10 rounded-lg object-contain" src="/icon.png"/> Ray Ha Savoury</a>
+<div class="hidden md:flex items-center gap-lg" id="nav-links">
+<a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#menu">Menu</a>
+<a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#order">Order</a>
+<a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#about">About</a>
+<a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="bg-plum-primary text-white px-md py-2 rounded-xl font-bold hover:bg-primary-container transition-all active:scale-95 duration-200" href="#order">Order Now</a>
+</div>
+</div>
+</nav>
+
+<main class="pt-[72px]">
+
+<!-- Hero Section -->
+<section class="relative min-h-screen md:min-h-[870px] flex items-center overflow-hidden bg-plum-primary">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" alt="Premium food photography of golden-brown fried popia and creamy carbonara wraps" src="/hero-bg.jpg"/>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter text-white w-full">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-2 rounded-full font-semibold text-label-sm mb-md border border-green-500/30" id="hero-status-badge">
+<span class="w-2 h-2 rounded-full bg-green-500"></span> Orders Open
+</span>
+<h1 class="font-h1 text-h1 mb-base">Ray Ha Savoury</h1>
+<p class="font-h2 text-h2 text-gold-accent italic mb-lg">Savour The Goodness</p>
+<p class="font-body-lg text-body-lg mb-xl opacity-90">Experience the finest homemade Bruneian delights. From our signature cheesy Carbonara Popia to authentic Bakso Mama, every bite is a celebration of artisanal tradition and modern taste.</p>
+<div class="flex gap-md">
+<a class="bg-gold-accent text-plum-primary px-lg py-3 rounded-xl font-bold text-body-lg hover:bg-secondary-fixed transition-all shadow-lg shadow-gold-accent/20" href="#order">Order Now</a>
+<a class="border-2 border-white/30 backdrop-blur-sm px-lg py-3 rounded-xl font-bold text-body-lg hover:bg-white/10 transition-all" href="#menu">View Menu</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How to Order -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-lg">
+<h2 class="font-h2 text-h2 text-plum-primary mb-xs">Easy Ordering Process</h2>
+<div class="w-24 h-1 bg-gold-accent mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-lg">
+<div class="text-center p-md bg-white rounded-xl shadow-sm shadow-plum-primary/5 hover:translate-y-[-4px] transition-all">
+<div class="w-16 h-16 bg-cream-bg rounded-full flex items-center justify-center mx-auto mb-md text-gold-accent">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<h3 class="font-h3 text-h3 text-plum-primary mb-sm">1. Browse Menu</h3>
+<p class="text-on-surface-variant">Explore our curated selection of savory wraps, crispy popia, and traditional bakso.</p>
+</div>
+<div class="text-center p-md bg-white rounded-xl shadow-sm shadow-plum-primary/5 hover:translate-y-[-4px] transition-all">
+<div class="w-16 h-16 bg-cream-bg rounded-full flex items-center justify-center mx-auto mb-md text-gold-accent">
+<span class="material-symbols-outlined text-[32px]">edit_note</span>
+</div>
+<h3 class="font-h3 text-h3 text-plum-primary mb-sm">2. Submit Form</h3>
+<p class="text-on-surface-variant">Fill in our streamlined order form below with your preferences and delivery details.</p>
+</div>
+<div class="text-center p-md bg-white rounded-xl shadow-sm shadow-plum-primary/5 hover:translate-y-[-4px] transition-all">
+<div class="w-16 h-16 bg-cream-bg rounded-full flex items-center justify-center mx-auto mb-md text-gold-accent">
+<span class="material-symbols-outlined text-[32px]">payments</span>
+</div>
+<h3 class="font-h3 text-h3 text-plum-primary mb-sm">3. Pay & Confirm</h3>
+<p class="text-on-surface-variant">Secure your order via BIBD Transfer or Cash. We'll confirm your date via WhatsApp.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Menu Section -->
+<section class="py-xl bg-cream-bg" id="menu">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-h2 text-h2 text-plum-primary">Our Signature Menu</h2>
+<p class="text-on-surface-variant mt-2 italic">Freshly made with premium ingredients and love.</p>
+</div>
+<span class="bg-lavender-modern/20 text-on-tertiary-fixed-variant px-4 py-2 rounded-full font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span> Halal Certified
+</span>
+</div>
+<div class="grid md:grid-cols-3 gap-md" id="menu-grid">
+<!-- Menu items rendered dynamically via JS -->
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section class="py-xl bg-inverse-surface text-cream-bg" id="about">
+<div class="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-xl items-center">
+<div class="relative">
+<img class="rounded-2xl shadow-2xl" alt="Warm artisan kitchen scene with fresh ingredients being prepared by hand" src="/about-kitchen.jpg"/>
+<div class="absolute -bottom-4 -right-4 bg-gold-accent p-md rounded-xl text-plum-primary hidden md:block">
+<p class="font-h1 text-h2 mb-0">100%</p>
+<p class="font-bold text-label-sm uppercase tracking-widest">Homemade Love</p>
+</div>
+</div>
+<div>
+<h4 class="text-gold-accent font-bold uppercase tracking-widest text-label-sm mb-base">Our Heritage</h4>
+<h2 class="font-h2 text-h2 mb-md">Bruneian Flavours, Crafted in Our Kitchen.</h2>
+<p class="text-surface-variant mb-lg leading-relaxed text-body-lg">Ray Ha Savoury started with a simple passion: bringing the rich, comforting taste of homemade savory snacks to our community in Brunei-Muara. What began as a family favorite quickly grew into a home-based business dedicated to quality.</p>
+<p class="text-surface-variant mb-lg leading-relaxed text-body-lg">Every wrap and popia is handmade daily using premium ingredients. We believe in transparency and tradition, which is why our products are strictly Halal and free from artificial preservatives. From our table to yours, we bring you &quot;The Goodness&quot; in every bite.</p>
+<div class="grid grid-cols-2 gap-md">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-gold-accent">verified_user</span>
+<span class="font-semibold">Halal Certified</span>
+</div>
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-gold-accent">nest_eco_leaf</span>
+<span class="font-semibold">Fresh Ingredients</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Order Form Section -->
+<section class="py-xl bg-surface-container" id="order">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="bg-white p-lg md:p-xl rounded-2xl shadow-xl shadow-plum-primary/10 border border-outline-variant/20">
+
+<div class="order-form-body" id="order-form-body">
+<div class="text-center mb-xl">
+<span class="material-symbols-outlined text-plum-primary text-[48px] mb-base">shopping_cart_checkout</span>
+<h2 class="font-h2 text-h2 text-plum-primary">Place Your Order</h2>
+<p class="text-on-surface-variant mt-2 italic">Owner will confirm your requested date via WhatsApp</p>
+<p class="text-on-surface-variant mt-1 text-sm" id="availability-note"></p>
+</div>
+<form id="order-form" class="space-y-md">
+<div class="grid md:grid-cols-2 gap-md">
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-xs" for="name">Name</label>
+<input class="w-full bg-cream-bg border border-charcoal-text/10 rounded-xl px-md py-sm focus:ring-gold-accent focus:border-gold-accent outline-none" id="name" name="name" placeholder="Full Name" required type="text" maxlength="100"/>
+</div>
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-xs" for="whatsapp">WhatsApp Number</label>
+<input class="w-full bg-cream-bg border border-charcoal-text/10 rounded-xl px-md py-sm focus:ring-gold-accent focus:border-gold-accent outline-none" id="whatsapp" name="whatsapp" placeholder="+673 XXX XXXX" required type="tel" maxlength="20" pattern="\+?[0-9\s\-]{7,20}"/>
+</div>
+</div>
+
+<!-- Order Summary -->
+<div>
+<div class="flex justify-between items-center mb-xs">
+<label class="block font-bold text-plum-primary text-sm">Your Order</label>
+<span class="text-on-surface-variant text-xs italic" id="order-hint-empty">Add items from the menu above</span>
+<span class="text-on-surface-variant text-xs italic hidden" id="order-hint-count"></span>
+</div>
+<div class="bg-cream-bg border border-charcoal-text/10 rounded-xl divide-y divide-charcoal-text/5" id="order-summary">
+<div class="p-md text-center text-on-surface-variant/60 text-sm" id="order-empty">
+<span class="material-symbols-outlined text-[32px] mb-xs block opacity-40">restaurant_menu</span>
+No items yet — tap &quot;Add to Order&quot; on any menu item above
+</div>
+</div>
+<div class="flex justify-between items-center mt-sm hidden" id="order-total-row">
+<span class="font-bold text-plum-primary">Total</span>
+<span class="font-bold text-plum-primary text-body-lg" id="order-total">BND $0.00</span>
+</div>
+</div>
+
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-xs" for="date">Preferred Date</label>
+<input class="w-full bg-cream-bg border border-charcoal-text/10 rounded-xl px-md py-sm focus:ring-gold-accent focus:border-gold-accent outline-none" id="date" name="date" required type="date"/>
+</div>
+            <div class="grid md:grid-cols-2 gap-md">
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-sm">Collection Method</label>
+<div class="flex gap-md">
+<label class="flex items-center gap-xs cursor-pointer font-medium">
+<input class="text-plum-primary focus:ring-plum-primary accent-plum-primary" name="method" required type="radio" value="Pickup" onchange="toggleDeliveryAddress()"/> Pickup
+</label>
+<label class="flex items-center gap-xs cursor-pointer font-medium">
+<input class="text-plum-primary focus:ring-plum-primary accent-plum-primary" name="method" type="radio" value="Delivery" onchange="toggleDeliveryAddress()"/> Delivery
+</label>
+</div>
+</div>
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-sm">Payment Method</label>
+<div class="flex gap-md">
+<label class="flex items-center gap-xs cursor-pointer font-medium">
+<input class="text-plum-primary focus:ring-plum-primary accent-plum-primary" name="payment" required type="radio" value="BIBD"/> BIBD
+</label>
+<label class="flex items-center gap-xs cursor-pointer font-medium">
+<input class="text-plum-primary focus:ring-plum-primary accent-plum-primary" name="payment" type="radio" value="Cash"/> Cash
+</label>
+</div>
+</div>
+</div>
+
+<div class="hidden" id="delivery-address-group">
+<label class="block font-bold text-plum-primary text-sm mb-xs" for="delivery-address">Delivery Address</label>
+<textarea class="w-full bg-cream-bg border border-charcoal-text/10 rounded-xl px-md py-sm focus:ring-gold-accent focus:border-gold-accent outline-none" id="delivery-address" name="delivery-address" placeholder="Full address, landmarks, and area..." rows="2" maxlength="300"></textarea>
+</div>
+<div>
+<label class="block font-bold text-plum-primary text-sm mb-xs" for="notes">Special Requests (Optional)</label>
+<textarea class="w-full bg-cream-bg border border-charcoal-text/10 rounded-xl px-md py-sm focus:ring-gold-accent focus:border-gold-accent outline-none" id="notes" name="notes" placeholder="Any dietary notes, allergies, or special instructions..." rows="3" maxlength="500"></textarea>
+</div>
+<!-- Honeypot anti-spam field -->
+<div style="position: absolute; left: -9999px;" aria-hidden="true">
+<label for="website">Website</label>
+<input id="website" name="website" tabindex="-1" type="text" autocomplete="off"/>
+</div>
+<button class="w-full bg-plum-primary text-white px-lg py-sm rounded-xl font-bold text-body-lg hover:bg-primary-container transition-all mt-lg active:scale-[0.98]" type="submit">Submit Order Request</button>
+</form>
+</div>
+
+<div class="form-success text-center py-lg" id="form-success">
+<span class="material-symbols-outlined text-gold-accent text-[64px] mb-base">check_circle</span>
+<h2 class="font-h2 text-h2 text-plum-primary mb-md">Order Submitted!</h2>
+<p class="text-on-surface-variant mb-lg">Your order has been sent via WhatsApp. The owner will confirm your requested date shortly.</p>
+<a class="bg-gold-accent text-plum-primary px-lg py-3 rounded-xl font-bold text-body-lg hover:bg-secondary-fixed transition-all inline-flex items-center gap-2" href="https://wa.me/6737402220" id="whatsapp-fallback">
+<span class="material-symbols-outlined">chat</span> Chat on WhatsApp
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-inverse-surface text-cream-bg w-full pt-xl pb-md" id="contact">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-start gap-xl mb-lg">
+<div class="max-w-sm">
+<h3 class="font-h3 text-h3 text-gold-accent mb-md">Ray Ha Savoury</h3>
+<p class="text-surface-variant mb-md opacity-80" id="footer-desc"></p>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center hover:bg-gold-accent hover:text-plum-primary transition-colors" href="https://www.instagram.com/ray_ha_savoury/" target="_blank" rel="noopener">
+<span class="material-symbols-outlined">camera_alt</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center hover:bg-gold-accent hover:text-plum-primary transition-colors" href="https://wa.me/6737402220" target="_blank" rel="noopener">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-xl">
+<div>
+<h4 class="font-bold text-white mb-md uppercase tracking-wider text-label-sm">Navigation</h4>
+<ul class="space-y-sm">
+<li><a class="text-surface-variant hover:text-white transition-colors" href="#menu">Menu</a></li>
+<li><a class="text-surface-variant hover:text-white transition-colors" href="#order">Order Guide</a></li>
+<li><a class="text-surface-variant hover:text-white transition-colors" href="#about">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-md uppercase tracking-wider text-label-sm">Contact Info</h4>
+<ul class="space-y-sm text-surface-variant">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">location_on</span> <span id="footer-location"></span></li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">mail</span> <span id="footer-email"></span></li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-gold-accent text-base">call</span> <span id="footer-whatsapp"></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-outline/20 pt-md flex flex-col md:flex-row justify-between items-center gap-md text-surface-variant text-body-md opacity-80">
+<p id="footer-copyright"></p>
+<div class="flex gap-lg">
+<a class="hover:text-gold-accent transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gold-accent transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Floating WhatsApp FAB -->
+<a class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 active:scale-95" href="https://wa.me/6737402220" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+
+<script type="module">
+import { config } from './data/config.js';
+import { menuItems } from './data/menu.js';
+
+// --- Security Utilities ---
+function escHtml(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function escAttr(str) {
+    return escHtml(str).replace(/"/g, '&quot;');
+}
+
+// --- Availability Badge ---
+function updateAvailability() {
+    const badge = document.getElementById('hero-status-badge');
+    const note = document.getElementById('availability-note');
+    if (!config.ordersOpen) {
+        badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-red-500"></span> Orders Closed \u2014 Next: ${escHtml(config.nextOpenDate)}`;
+        badge.className = 'inline-flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-full font-semibold text-label-sm mb-md border border-red-500/30';
+        if (note) {
+            note.textContent = `Orders are accepted on available dates only. Owner will confirm your requested date via WhatsApp.`;
+        }
+    } else {
+        badge.innerHTML = `<span class="w-2 h-2 rounded-full bg-green-500"></span> ${escHtml(config.availabilityStatus)}`;
+        badge.className = 'inline-flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-2 rounded-full font-semibold text-label-sm mb-md border border-green-500/30';
+        if (note) {
+            note.textContent = `Currently accepting orders. Owner will confirm your requested date via WhatsApp.`;
+        }
+    }
+}
+
+// --- Render Menu ---
+const productImages = {
+    'popia-frozen': '/menu/popia-frozen.jpg',
+    'popia-fried': '/menu/popia-fried.jpg',
+    'wrap-chicken': '/menu/wrap-chicken.jpg',
+    'wrap-beef': '/menu/wrap-beef.jpg',
+    'wrap-tuna': '/menu/wrap-tuna.jpg',
+    'bakso-mama': '/menu/bakso-mama.jpg',
+};
+
+function renderMenu() {
+    const grid = document.getElementById('menu-grid');
+    if (!grid) return;
+
+    grid.innerHTML = menuItems.map((item, i) => {
+        const imgSrc = productImages[item.id] || '/icon.png';
+        const showPrice = item.price > 0 ? `BND $${item.price.toFixed(2)}` : '';
+        const priceLabel = showPrice ? `<span class="font-bold text-plum-primary">${showPrice} <small class="font-normal text-xs">/ ${escHtml(item.unit)}</small></span>` : `<span class="font-bold text-plum-primary text-sm">${escHtml(item.priceNote || 'Contact for pricing')}</span>`;
+
+        return `
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
+            <div class="h-64 overflow-hidden relative shrink-0">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${escHtml(item.description)}" src="${imgSrc}"/>
+                ${item.badge ? `<span class="absolute top-4 right-4 bg-gold-accent text-plum-primary text-label-sm font-bold px-3 py-1 rounded-full">${escHtml(item.badge)}</span>` : ''}
+            </div>
+            <div class="p-md flex flex-col flex-1">
+                <div class="flex justify-between items-start mb-base">
+                    <h3 class="font-h3 text-h3 text-plum-primary">${escHtml(item.name)}</h3>
+                    ${priceLabel}
+                </div>
+                <p class="text-on-surface-variant text-body-md mb-md flex-1">${escHtml(item.description)}</p>
+                <div class="flex flex-wrap gap-xs mb-lg">
+                    ${item.tags.map(tag => `<span class="bg-surface-container-highest text-plum-primary text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded">${escHtml(tag)}</span>`).join('')}
+                </div>
+                <button class="w-full border border-plum-primary text-plum-primary py-sm rounded-xl font-bold hover:bg-plum-primary hover:text-white transition-colors mt-auto" data-add-item="${i}" onclick="addToOrder(${i})">Add to Order</button>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+// --- Cart Management ---
+const cart = [];
+
+let emptyMsgTemplate = '';
+
+function captureEmptyTemplate() {
+    const el = document.getElementById('order-empty');
+    if (el) {
+        emptyMsgTemplate = el.outerHTML;
+    }
+}
+
+window.addToOrder = function(itemIndex) {
+    const item = menuItems[itemIndex];
+    if (!item) return;
+    const existing = cart.find(ci => ci.id === item.id);
+
+    if (existing) {
+        existing.quantity++;
+    } else {
+        cart.push({
+            id: item.id,
+            name: item.name,
+            type: item.type,
+            price: item.price,
+            unit: item.unit,
+            priceNote: item.priceNote || null,
+            quantity: 1,
+            salad: false,
+        });
+    }
+    renderOrderSummary();
+    document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+};
+
+window.updateCartQuantity = function(id, delta) {
+    const item = cart.find(ci => ci.id === id);
+    if (!item) return;
+    item.quantity += delta;
+    if (item.quantity <= 0) {
+        const idx = cart.indexOf(item);
+        cart.splice(idx, 1);
+    }
+    renderOrderSummary();
+};
+
+window.removeFromCart = function(id) {
+    const idx = cart.findIndex(ci => ci.id === id);
+    if (idx !== -1) cart.splice(idx, 1);
+    renderOrderSummary();
+};
+
+window.toggleWrapSalad = function(id) {
+    const item = cart.find(ci => ci.id === id);
+    if (!item) return;
+    item.salad = !item.salad;
+    renderOrderSummary();
+};
+
+function formatItemLabel(item) {
+    const typeLabel = item.type ? ` (${item.type})` : '';
+    return `${item.name}${typeLabel}`;
+}
+
+function renderOrderSummary() {
+    const container = document.getElementById('order-summary');
+    const totalRow = document.getElementById('order-total-row');
+    const totalEl = document.getElementById('order-total');
+    const hintEmpty = document.getElementById('order-hint-empty');
+    const hintCount = document.getElementById('order-hint-count');
+
+    if (!container) return;
+
+    if (cart.length === 0) {
+        container.innerHTML = emptyMsgTemplate;
+        totalEl.textContent = 'BND $0.00';
+        totalRow.classList.add('hidden');
+        hintEmpty.classList.remove('hidden');
+        hintCount.classList.add('hidden');
+        return;
+    }
+
+    hintEmpty.classList.add('hidden');
+    hintCount.classList.remove('hidden');
+    const totalItems = cart.reduce((sum, ci) => sum + ci.quantity, 0);
+    hintCount.textContent = `${totalItems} item${totalItems !== 1 ? 's' : ''} in order`;
+
+    let total = 0;
+    container.innerHTML = cart.map(ci => {
+        const isWrap = ci.id.startsWith('wrap-');
+        const saladPrice = isWrap && ci.salad ? 0.50 : 0;
+        const lineTotal = ci.price > 0 ? (ci.price + saladPrice) * ci.quantity : 0;
+        total += lineTotal;
+        const label = escHtml(formatItemLabel(ci));
+        const priceDisplay = ci.price > 0
+            ? `BND $${ci.price.toFixed(2)} / ${escHtml(ci.unit)}`
+            : escHtml(ci.priceNote || 'Contact for pricing');
+        const lineTotalDisplay = ci.price > 0 ? `BND $${lineTotal.toFixed(2)}` : '\u2014';
+        const saladRow = isWrap ? `
+        <button type="button" class="flex items-center gap-1 text-xs font-medium transition-colors mt-1 ${ci.salad ? 'text-green-600' : 'text-on-surface-variant/50 hover:text-plum-primary'}" onclick="toggleWrapSalad('${escAttr(ci.id)}')">
+            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL'${ci.salad ? '1' : '0'};">eco</span>
+            ${ci.salad ? 'Salad added (+$0.50)' : '+ Add Salad (+$0.50)'}
+        </button>` : '';
+
+        return `
+        <div class="p-md flex items-center justify-between gap-md">
+            <div class="flex-1 min-w-0">
+                <p class="font-semibold text-plum-primary text-sm truncate">${label}</p>
+                <p class="text-on-surface-variant text-xs">${priceDisplay}${isWrap && ci.salad ? ' \u2022 +Salad' : ''}</p>
+                ${saladRow}
+            </div>
+            <div class="flex items-center gap-sm shrink-0">
+                <button type="button" class="w-7 h-7 rounded-full border border-charcoal-text/20 flex items-center justify-center text-sm hover:bg-plum-primary hover:text-white hover:border-plum-primary transition-colors" onclick="updateCartQuantity('${escAttr(ci.id)}', -1)">\u2212</button>
+                <span class="w-8 text-center font-bold text-sm">${ci.quantity}</span>
+                <button type="button" class="w-7 h-7 rounded-full border border-charcoal-text/20 flex items-center justify-center text-sm hover:bg-plum-primary hover:text-white hover:border-plum-primary transition-colors" onclick="updateCartQuantity('${escAttr(ci.id)}', 1)">+</button>
+            </div>
+            <span class="font-bold text-plum-primary text-sm w-20 text-right shrink-0">${lineTotalDisplay}</span>
+            <button type="button" class="text-on-surface-variant/40 hover:text-red-500 transition-colors shrink-0" onclick="removeFromCart('${escAttr(ci.id)}')" title="Remove">
+                <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+        </div>`;
+    }).join('');
+
+    totalRow.classList.remove('hidden');
+    totalEl.textContent = total > 0 ? `BND $${total.toFixed(2)}` : 'Contact for pricing';
+}
+
+function getRadioValue(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value : '';
+}
+
+function getFormField(id) {
+    const el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+}
+
+window.toggleDeliveryAddress = function() {
+    const method = getRadioValue('method');
+    const group = document.getElementById('delivery-address-group');
+    if (group) {
+        group.classList.toggle('hidden', method !== 'Delivery');
+    }
+};
+
+// --- Form Handler ---
+function handleFormSubmit(e) {
+    e.preventDefault();
+
+    // Honeypot check
+    const honeypot = document.getElementById('website');
+    if (honeypot && honeypot.value) return;
+
+    const name = getFormField('name');
+    const whatsapp = getFormField('whatsapp');
+    const date = getFormField('date');
+    const method = getRadioValue('method');
+    const payment = getRadioValue('payment');
+    const deliveryAddress = getFormField('delivery-address');
+    const notes = getFormField('notes');
+
+    if (!name || !whatsapp || !date || !method || !payment) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    if (method === 'Delivery' && !deliveryAddress) {
+        alert('Please enter your delivery address.');
+        return;
+    }
+
+    if (cart.length === 0) {
+        alert('Please add at least one item to your order.');
+        return;
+    }
+
+    // Build items list for WhatsApp
+    let itemsText = '';
+    let grandTotal = 0;
+    let cartIndex = 1;
+    for (const ci of cart) {
+        const label = formatItemLabel(ci);
+        const isWrap = ci.id.startsWith('wrap-');
+        const saladLabel = isWrap && ci.salad ? ' + Salad' : '';
+        const qty = ci.quantity;
+        const saladPrice = isWrap && ci.salad ? 0.50 : 0;
+        const lineTotal = ci.price > 0 ? (ci.price + saladPrice) * ci.quantity : 0;
+        grandTotal += lineTotal;
+        const priceStr = ci.price > 0 ? `BND $${lineTotal.toFixed(2)}` : 'TBC';
+        itemsText += `${cartIndex}. ${label}${saladLabel} \u00d7${qty} \u2014 ${priceStr}\n`;
+        cartIndex++;
+    }
+
+    const totalLine = grandTotal > 0 ? `Total: BND $${grandTotal.toFixed(2)}` : 'Total: To be confirmed';
+
+    // Build WhatsApp message
+    const message = encodeURIComponent(
+        `New Order\n\n` +
+        `Name: ${name}\n` +
+        `WhatsApp: ${whatsapp}\n` +
+        `Date: ${date}\n` +
+        `Collection: ${method}\n` +
+        (deliveryAddress ? `Delivery Address: ${deliveryAddress}\n` : '') +
+        `Payment: ${payment}\n\n` +
+        `Order Items:\n${itemsText}\n` +
+        `${totalLine}\n` +
+        (notes ? `\nNotes: ${notes}\n` : '') +
+        `\nSubmitted via rayhasavoury`
+    );
+
+    // Show success state
+    document.getElementById('order-form-body').classList.add('hidden');
+    document.getElementById('form-success').classList.add('active');
+
+    // Open WhatsApp
+    const waUrl = `https://wa.me/${config.contact.whatsapp}?text=${message}`;
+    window.open(waUrl, '_blank');
+}
+
+// --- Populate Footer ---
+function populateFooter() {
+    const desc = document.getElementById('footer-desc');
+    const location = document.getElementById('footer-location');
+    const email = document.getElementById('footer-email');
+    const whatsapp = document.getElementById('footer-whatsapp');
+    const copyright = document.getElementById('footer-copyright');
+
+    if (desc) desc.textContent = config.brand.description;
+    if (location) location.textContent = config.brand.location;
+    if (email) email.textContent = config.contact.email;
+    if (whatsapp) whatsapp.textContent = `+673 ${config.contact.whatsapp.slice(3)}`;
+    if (copyright) copyright.textContent = `© ${new Date().getFullYear()} Ray Ha Savoury Brunei. All Rights Reserved. Halal Certified.`;
+}
+
+// --- Scroll Spy ---
+function updateActiveNavLink() {
+    const sections = ['menu', 'order', 'about', 'contact'];
+    const navLinks = document.querySelectorAll('#nav-links a');
+    const scrollPos = window.scrollY + 120;
+
+    let current = '';
+    for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollPos) {
+            current = id;
+        }
+    }
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href').replace('#', '');
+        if (href === current) {
+            link.classList.add('text-plum-primary', 'border-b-2', 'border-gold-accent', 'pb-1');
+            link.classList.remove('text-charcoal-text');
+        } else {
+            link.classList.remove('text-plum-primary', 'border-b-2', 'border-gold-accent', 'pb-1');
+            link.classList.add('text-charcoal-text');
+        }
+    });
+}
+
+// --- Init ---
+document.addEventListener('DOMContentLoaded', () => {
+    captureEmptyTemplate();
+    updateAvailability();
+    renderMenu();
+    populateFooter();
+
+    document.getElementById('order-form')?.addEventListener('submit', handleFormSubmit);
+
+    window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+    updateActiveNavLink();
+});
+</script>
+</body>
+</html>

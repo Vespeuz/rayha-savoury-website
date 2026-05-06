@@ -1,0 +1,15 @@
+{
+  "name": "ray-ha-savoury",
+  "version": "1.0.0",
+  "description": "Ray Ha Savoury — Savour The Goodness. Halal homemade wraps & popia in Brunei.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
