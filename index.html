@@ -135,26 +135,26 @@
     }
 </style>
 </head>
-<body class="bg-cream-bg text-charcoal-text font-body-md antialiased">
+<body class="bg-cream-bg text-charcoal-text font-body-md antialiased overflow-x-hidden">
 
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-cream-bg/95 backdrop-blur-md shadow-sm shadow-plum-primary/5">
-<div class="flex justify-between items-center px-gutter py-3 md:py-4 max-w-container-max mx-auto">
-<a class="flex items-center gap-sm text-plum-primary dark:text-primary-fixed" href="#"><img alt="Ray Ha Savoury logo" class="w-8 h-8 md:w-10 md:h-10 rounded-lg object-contain" src="/icon.png"/> <span class="font-h3 md:font-h2 font-bold">Ray Ha Savoury</span></a>
+<div class="flex justify-between items-center px-3 sm:px-gutter py-3 md:py-4 max-w-container-max mx-auto">
+<a class="flex items-center gap-xs sm:gap-sm min-w-0 text-plum-primary dark:text-primary-fixed" href="#"><img alt="Ray Ha Savoury logo" class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg object-contain shrink-0" src="/icon.png"/> <span class="font-h3 md:font-h2 font-bold truncate max-w-[90px] sm:max-w-[140px] md:max-w-none">Ray Ha Savoury</span></a>
 <div class="hidden md:flex items-center gap-lg" id="nav-links">
 <a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#menu">Menu</a>
 <a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#order">Order</a>
 <a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#about">About</a>
 <a class="text-charcoal-text dark:text-surface-dim hover:text-plum-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="#contact">Contact</a>
 </div>
-<div class="flex items-center gap-sm md:gap-md">
-<a class="bg-plum-primary text-white px-sm py-1.5 md:px-md md:py-2 text-sm md:text-base rounded-xl font-bold hover:bg-primary-container transition-all active:scale-95 duration-200" href="#order">Order Now</a>
-<button class="md:hidden material-symbols-outlined text-plum-primary p-1 text-[28px]" id="mobile-menu-btn" aria-label="Open menu">menu</button>
+<div class="flex items-center gap-2 md:gap-md shrink-0">
+<a class="bg-plum-primary text-white px-2.5 sm:px-sm py-1.5 md:px-md md:py-2 text-sm md:text-base rounded-xl font-bold hover:bg-primary-container transition-all active:scale-95 duration-200 whitespace-nowrap" href="#order"><span class="sm:hidden">Order</span><span class="hidden sm:inline">Order Now</span></a>
+<button class="md:hidden material-symbols-outlined text-plum-primary p-0.5 sm:p-1 text-[26px] sm:text-[28px] shrink-0" id="mobile-menu-btn" aria-label="Open menu">menu</button>
 </div>
 </div>
 <!-- Mobile menu panel -->
 <div class="md:hidden hidden bg-cream-bg border-t border-charcoal-text/5 shadow-md" id="mobile-menu">
-<div class="flex flex-col px-gutter py-md gap-md">
+<div class="flex flex-col px-3 sm:px-gutter py-md gap-md">
 <a class="text-charcoal-text hover:text-plum-primary transition-colors font-body-md py-sm" href="#menu" onclick="closeMobileMenu()">Menu</a>
 <a class="text-charcoal-text hover:text-plum-primary transition-colors font-body-md py-sm" href="#order" onclick="closeMobileMenu()">Order</a>
 <a class="text-charcoal-text hover:text-plum-primary transition-colors font-body-md py-sm" href="#about" onclick="closeMobileMenu()">About</a>
